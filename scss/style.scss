@@ -88,8 +88,8 @@ body{
   padding: 9% 5% 0% 26%;
 
   #logo-1{
-   margin-bottom: 4%;
-        }
+    margin-bottom: 4%;
+  }
   .page-text-a{
     .text-1{
       font-family: VNFQuicksand-Bold;
@@ -101,22 +101,22 @@ body{
     }
   }
   .page-text-b{
-           p{
-             max-width: 487px;
-             padding-top: 93px;
-             font-family: Lato;
-             font-size: 16px;
-             line-height: 1.5;
-             text-align: justify;
-             color: #673ab7;
-           }
+    p{
+      max-width: 487px;
+      padding-top: 93px;
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: justify;
+      color: #673ab7;
+    }
   }
 
 }
 .rectangle{
-   .img-big{
-   margin-top: -149px;
-   }
+  .img-big{
+    margin-top: -149px;
+  }
 }
 
 .section-title-1{
@@ -126,14 +126,14 @@ body{
     .img-center{
       margin-left: 43px;
     }
-      h2{
-        padding-top: 23px;
-        font-family: VNFQuicksand-Bold;
-        font-size: 36px;
-        font-weight: bold;
-        text-align: center;
-        color: #00bcd4;
-      }
+    h2{
+      padding-top: 23px;
+      font-family: VNFQuicksand-Bold;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      color: #00bcd4;
+    }
     .text-a{
       p {
         padding-top: 22px;
@@ -190,11 +190,11 @@ body{
     .img-book-right{
       padding-top: 15%;
       margin-left: 10%;
-    .img-list-top{
-      max-width: 82%;
-      border-radius: 30px;
-      box-shadow: 30px 30px 40px 0 rgba(0, 0, 0, 0.1);
-    }}
+      .img-list-top{
+        max-width: 82%;
+        border-radius: 30px;
+        box-shadow: 30px 30px 40px 0 rgba(0, 0, 0, 0.1);
+      }}
     .img-book-bottom {
       position: absolute;
       right: 76px;
@@ -251,10 +251,10 @@ body{
         font-weight: bold;
         text-align: left;
         color: $color-blue;
-     .name{
-       color: $color-purple;
-       font-family: VNFQuicksand-Bold;
-      }}
+        .name{
+          color: $color-purple;
+          font-family: VNFQuicksand-Bold;
+        }}
       .list-text{
         max-width: 609px;
         font-family: Lato;
@@ -288,15 +288,15 @@ body{
       transform: scale(1.25);
       cursor: pointer;
     }
-   .text-comment{
-     font-family: Lato;
-     font-size: 16px;
-     line-height: 1.5;
-     text-align: justify;
-     color: #000000;
-     padding: 41px 42px 97px 42px;
+    .text-comment{
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: justify;
+      color: #000000;
+      padding: 41px 42px 97px 42px;
 
-   }
+    }
     .img-comment-user{
       max-width: 110px;
       max-height: 110px;
