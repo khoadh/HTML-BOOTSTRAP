@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Trang chu</title>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -13,10 +14,10 @@
 
 </head>
 <body>
-<div class="contentner">
+<div class="container-fluid" id="page">
     <nav class="list-inline">
         <div class="col-md-10 title-list-nav">
-            <a href="index.html" alt=""><img src="..\HTML-BOOTSTRAP\image\img\logo.png" class="logo img-responsive"></a>
+            <a href="index.html" alt=""><img src="image\img\logo.png" class="logo img-responsive"></a>
             <a href="#">Bảng Tin </a>
             <a href="#">Khóa Học </a>
             <a href="#">Tủ Sách</a>
@@ -33,23 +34,18 @@
                 <span class="ti-search icon-sreach"></span>
             </a>
         </div>
-
-
-
     </nav>
-    <div class="row" id="page">
-        <div class="col-md-6">
-
-
+    <div class="row container-fluid" >
+        <div class="col-md-6 col-xs-12  ">
             <div class="title-bottom">
-                <img src="..\HTML-BOOTSTRAP\image\img\logo.png " class="img-responsive" id="logo-1">
+                <img src="image\img\logo.png " class="img-responsive" id="logo-1">
                 <div class="page-text-a">
                     <div class="icon-a"></div>
                     <div class="icon-b"></div>
                     <div class="text-1">Summer is often synonymous with beachs, ballparks and barbecues</div>
                     <div class="icon-a1"></div>
-                    <div class="icon-b1"></div>
-                    <div class="icon-c1"></div>
+                    <div class="icon-bb"></div>
+                    <div class="icon-ab"></div>
                 </div>
                 <div class="page-text-b">
                     <p>Summer is often synonymous with beaches, ballparks and barbecues, all offering tempting snacks and
@@ -62,14 +58,14 @@
                         <span class="ti-arrow-right icon-next"></span>
                     </a>
                     <a href="" class="icon-top">đăng ký học thử
-                        <span class="ti-arrow-right" id="icon-h-1"></span>
+                        <span class="ti-arrow-right icon-next"></span>
                         <span class="ti-angle-double-right" id="icon-h-2"></span>
                     </a>
                 </div>
             </div>
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-xs-6">
             <div class="login">
                 <ul class="list-inline">
 
@@ -85,7 +81,7 @@
                     <div class=" icon-next"></div>
                     <div class="ti-arrow-right icon-back"></div>
                 </div>
-                <img src="..\HTML-BOOTSTRAP\image\img\slide-section1.jpg" class="img-responsive img-big">
+                <img src="image\img\slide-section1.jpg" class="img-responsive img-big">
 
                 <div class="icon-img-home">
                     <div class="icon-home-back"></div>
@@ -100,8 +96,8 @@
         </div>
     </div>
 
-    <div class="row section-title-1">
-        <div class="col-md-4">
+    <div class="row section-title-1 container-fluid">
+        <div class="col-md-4 col-xs-6 ">
             <div class="span_text1">
                 <img src="../project_training(main)/image/img/N5.png" class="img-responsive">
                 <h2 class="contact-p">Làm quen</h2>
@@ -115,15 +111,11 @@
                 <span class="ti-angle-double-right icon-list-btn-2"></span>
 
                 <a class="page-text-d" id="" href=""></a>
-                <div class="">
-                    <samp class="ti-arrow-right icon-home-1"></samp>
-                    <span class="ti-angle-double-right icon-home-2"></span>
 
-                </div>
             </div>
         </div>
 
-        <div class="col-md-4 secc">
+        <div class="col-md-4 col-xs-6 secc">
             <div class="span_text1">
                 <img src="../project_training(main)/image/img/N4.png" class="img-responsive img-center">
                 <h2 class="contact-l">Giao tiếp cơ bản</h2>
@@ -141,7 +133,7 @@
 
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-6">
             <div class="span_text1">
                 <img src="../project_training(main)/image/img/N3.png" class="img-responsive">
                 <h2 class="contact-new">Giao tiếp nâng cao</h2>
@@ -152,41 +144,38 @@
                         Nhật.</p>
                 </div>
                 <a href="" class=" page-text-list">đăng ký học thử</a>
+                <span class="ti-arrow-right icon-list-btn-1"></span>
+                <span class="ti-angle-double-right icon-list-btn-2"></span>
 
-
-                <div class="ti-arrow-right icon-list-btn-1"></div>
-                <div class="ti-angle-double-right icon-list-btn-2"></div>
 
             </div>
         </div>
     </div>
-    <div class="row sesstion-title-2">
-        <div class="col-md-5">
+    <div class="row sesstion-title-2 container-fluid">
+        <div class="col-md-5 col-xs-8">
             <div class="title-lisst">
                 <p class="ti-star now"><a href="">Phương pháp học hoàn toàn mới</a></p>
                 <p class="ti-crown now"><a href="">Giảng viên trình độ cao</a></p>
                 <p class="ti-medall now"><a href="">Giáo trình mua bản quyền từ nhật</a></p>
                 <p class="ti-medall-alt now"><a href="">Chương trình học trực quan</a></p>
                 <p class="ti-bell now"><a href="">Thời gian thực hành nhiều</a></p>
-                <a href="" class="page-text-list" id="login-list">đăng ký học thử</a>
-                <span class="ti-arrow-right icon-list-btn-1" id="login-list-1"></span>
-                <span class="ti-angle-double-right icon-list-btn-2" id="login-list-2"></span>
-                <div class="button-left">
-                    <samp class="ti-angle-double-up" id="icon-li"></samp>
-                </div>
+                <a href="" class="button-icon-book" id="login-list">đăng ký học thử</a>
+                <span class="ti-arrow-right icon-button-1" id="login-list-1"></span>
+                <span class="ti-angle-double-right icon-button-2" id="login-list-2"></span>
+
             </div>
 
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7 col-xs-10">
             <div class="img-list-book">
                 <div class="img-book-top">
-                    <img src="..\HTML-BOOTSTRAP\image\img\photo-1500989145603-8e7ef71d639e.jpg" class="img-responsive img-list-left">
+                    <img src="image\img\photo-1500989145603-8e7ef71d639e.jpg" class="img-responsive img-list-left">
                 </div>
                 <div class="img-book-right">
-                    <img src="..\HTML-BOOTSTRAP\image\img\pexels-photo-574285.jpg" class="img-responsive img-list-top">
+                    <img src="image\img\pexels-photo-574285.jpg" class="img-responsive img-list-top">
                 </div>
                 <div class="img-book-bottom">
-                    <img src="..\HTML-BOOTSTRAP\image\img\mac-glasses.jpg" class="img-responsive img-list-bottom">
+                    <img src="image\img\mac-glasses.jpg" class="img-responsive img-list-bottom">
                     <div class="button-home" id="inner-home">
                         <p><a href="">HỖ TRỢ
                             <span class="ti-help-alt icon-home-1"></span>
@@ -200,37 +189,37 @@
         </div>
     </div>
     <div class="row title-list-rotund">
-        <div class="col-md-2 ">
-            <img src="..\HTML-BOOTSTRAP\image\img\1.png" class="img-responsive img-rotund">
+        <div class="col-md-2 col-xs-3 ">
+            <img src="image\img\1.png" class="img-responsive img-rotund">
             <div class="text-rotund"><p  class="text-rotund-bottom">Đi học</p></div>
         </div>
-        <div class="col-md-2">
-            <img src="..\HTML-BOOTSTRAP\image\img\2.png" class="img-responsive img-rotund">
+        <div class="col-md-2 col-xs-3">
+            <img src="image\img\2.png" class="img-responsive img-rotund">
             <div class="text-rotund"><p class="text-rotund-bottom">Chọn lịch học </p></div>
         </div>
-        <div class="col-md-2">
-            <img src="..\HTML-BOOTSTRAP\image\img\1.png" class="img-responsive img-rotund">
+        <div class="col-md-2 col-xs-3">
+            <img src="image\img\1.png" class="img-responsive img-rotund">
             <div class="text-rotund"><p  class="text-rotund-bottom">Kiểm tra xếp lớp</p></div>
         </div>
-        <div class="col-md-2">
-            <img src="..\HTML-BOOTSTRAP\image\img\1.png" class="img-responsive img-rotund">
+        <div class="col-md-2 col-xs-3">
+            <img src="image\img\1.png" class="img-responsive img-rotund">
             <div class="text-rotund"><p  class="text-rotund-bottom">Hapo JC liên hệ tư vấn</p></div>
         </div>
-        <div class="col-md-2">
-            <img src="..\HTML-BOOTSTRAP\image\img\2.png" class="img-responsive img-rotund">
+        <div class="col-md-2 col-xs-3">
+            <img src="image\img\2.png" class="img-responsive img-rotund">
             <div class="text-rotund"><p  class="text-rotund-bottom">Đăng ký</p></div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-xs-3">
             <a href="">HỖ TRỢ</a>
             <span class="ti-help-alt icon-support-1"></span>
         </div>
     </div>
-    <div class="row sesstion-teacher">
-        <div class="col-md-6">
-            <img src="..\HTML-BOOTSTRAP\image\img\teacher.jpg" class="img-responsive img-teacher">
+    <div class="row sesstion-teacher container-fluid">
+        <div class="col-md-6 col-xs-9">
+            <img src="image\img\teacher.jpg" class="img-responsive img-teacher">
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 col-xs-9">
             <div class="teacher">
                 <div class="icon-list-b"></div>
                 <div class="icon-list-1"></div>
@@ -256,8 +245,8 @@
             </div>
         </div>
     </div>
-    <div class="row sesstion-comment">
-        <div class="col-md-6">
+    <div class="row sesstion-comment container-fluid">
+        <div class="col-md-6 col-xs-9">
             <div class="comment-title">
                 <div class="icon-cmt-a"></div>
                 <div class="icon-cmt-b"></div>
@@ -270,7 +259,7 @@
                     nghiệm về cuộc sống bên Nhật một cách thú vị và đầy thực tế. Mình tặng cho lớp học Tiếng Nhật của
                     Haposoft 5 sao.<br>
                 </p>
-                <img class="img-comment-user" src="..\HTML-BOOTSTRAP\image\img\images.png" class="img-responsive">
+                <img  src="image\img\images.png" class="img-responsive img-comment-user">
                 <div class="icon-text">
                     <i class="name-comment-A">PHÍ HỒNG NHUNG<br>
                         180/180 điểm N3</i>
@@ -287,14 +276,14 @@
                     Học phí rẻ vừa phải, hợp túi tiền học sinh sinh viên<br>
 
                 </p>
-                <img class="img-comment-user-1" src="..\HTML-BOOTSTRAP\image\img\images.png" class="img-responsive ">
+                <img class="img-comment-user-1" src="image\img\images.png" class="img-responsive ">
                 <div class="icon-text-1">
                     <i class="name-comment-A">PHÍ HỒNG NHUNG<br>
                         180/180 điểm N3</i>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 list-comment-">
+        <div class="col-md-6 col-xs-9 list-comment-">
             <div class="comment-list">
                 <div class="icon-cmt-a"></div>
                 <div class="icon-cmt-c"></div>
@@ -305,7 +294,7 @@
                     Học phí rẻ vừa phải, hợp túi tiền học sinh sinh viên<br>
 
                 </p>
-                <img class="img-comment-user-1" src="..\HTML-BOOTSTRAP\image\img\images.png" class="img-responsive">
+                <img class="img-comment-user-1" src="image\img\images.png" class="img-responsive">
                 <div class="icon-text-1">
                     <i class="name-comment-A">PHÍ HỒNG NHUNG<br>
                         180/180 điểm N3</i>
@@ -321,7 +310,7 @@
                     Học phí rẻ vừa phải, hợp túi tiền học sinh sinh viên<br>
 
                 </p>
-                <img class="img-comment-user-1" src="..\HTML-BOOTSTRAP\image\img\images.png" class="img-responsive">
+                <img class="img-comment-user-1" src="image\img\images.png" class="img-responsive">
                 <div class="icon-text-1">
                     <i class="name-comment-A">PHÍ HỒNG NHUNG<br>
                         180/180 điểm N3</i>
@@ -329,14 +318,14 @@
             </div>
         </div>
     </div>
-    <div class="row contac-list">
-        <div class="col-md-6">
+    <div class="row contac-list container-fluid">
+        <div class="col-md-6 col-xs-9">
             <div class="contact-form">
                 <div class="icon-contact-a"></div>
                 <div class="icon-contact-b"></div>
                 <h3 class="contact-title">Đăng kí tư vấn</h3>
-                <form action="/action_page.php">
-                    <ul class="contact-fr">
+                <form action="/action_page.php" class="form-horizontal" role="form">
+                    <ul class="contact-fr form-group">
                         <li>
                             <div class="ti-user icon-form"></div>
                             <input class="form-contact" type="text" name="firstname" placeholder="Tên của bạn" ><br></li>
@@ -361,26 +350,24 @@
                         </li>
                         <li>
 
-                            <a href="" class="page-text-list" id="submit">gửi đăng ký</a>
-                            <span class="ti-arrow-right icon-list-btn-1" id="submit-1"></span>
-                            <span class="ti-angle-double-right icon-list-btn-2" id="submit-2"></span>
+                            <a href="" class="form-submit" id="submit">gửi đăng ký</a>
+                            <span class="ti-arrow-right icon-sub-frm-1" id="submit-1"></span>
+                            <span class="ti-angle-double-right icon-sub-frm-2" id="submit-2"></span>
                         </li>
                     </ul>
                 </form>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="maps">
-                <iframe class="maps-footer"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8131451472996!2d105.81927231493218!3d21.00012598601392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac85be3a80f7%3A0x26f3b5f7c126cf4c!2zMjMgVMO0IFbEqW5oIERp4buHbiwgS2jGsMahbmcgVHJ1bmcsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1508312477154"
-                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="col-md-6 col-xs-9">
+            <div ">
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14899.252579193093!2d105.821461!3d21.000126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1da9b7af9a205be!2sHaposoft+co.%2Cltd!5e0!3m2!1svi!2s!4v1509425464594"  frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
-    <div class="row footer">
+    <div class="row footer container-fluid">
 
-        <div class="col-md-8">
+        <div class="col-md-8 col-xs-12">
             <div class="footer-list">
                 <div class="footer-tel">
                     <h4>TRANG CHỦ</h4>
@@ -426,37 +413,39 @@
                         <li><a href="">Ý kiến học viên</a></li>
                     </ul>
                 </div>
+                <div class="footer-tel">
+                    <h4>BLOG</h4>
+                </div>
 
             </div>
-            <div class="footer-tel">
-                <h4>BLOG</h4>
+            <div class="footer-pi">
+                <ul>
+                    <li class="privacy">Privacy</li>
+                    <li class="terms">Terms</li>
+                    <li class="settings">Settings</li>
+
+                </ul>
+                <ul class="footer-ti">
+                    <li class="ti-facebook footer-twitter"></li>
+                    <li class="ti-twitter footer-facebook"></li>
+                    <li class="ti-linkedin footer-linkedin"></li>
+                    <li class="ti-youtube footer-youtube"></li>
+                    <li class="haposoft">Copyright 2017 Haposoft. All right reserved</li>
+                </ul>
             </div>
         </div>
-
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-6">
             <div class="face-fra">
-
                 <iframe class="footer-logo"
                         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhaposoft%2F&tabs=timeline&width=450&height=614&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                         width="450" height="614" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                         allowTransparency="true"></iframe>
             </div>
         </div>
-        <div class="footer-pi">
-            <ul>
-                <li class="privacy">Privacy</li>
-                <li class="terms">Terms</li>
-                <li class="settings">Settings</li>
 
-            </ul>
-            <ul class="footer-ti">
-                <li class="ti-facebook footer-twitter"></li>
-                <li class="ti-twitter footer-facebook"></li>
-                <li class="ti-linkedin footer-linkedin"></li>
-                <li class="ti-youtube footer-youtube"></li>
-                <li class="haposoft">Copyright 2017 Haposoft. All right reserved</li>
-            </ul>
         </div>
-    </div>
+
+
+
 </body>
 </html>

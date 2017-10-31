@@ -1,4 +1,35 @@
 
+@mixin inline-block() {
+  display:-moz-inline-stack;
+  display:inline-block;
+  zoom:1;
+  *display:inline;
+}
+
+@mixin button-list($color) {
+  text-align: center;
+  width: 172px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 40px;
+  background-color: $color;
+  color: #fff;
+  margin-top: 45px;
+  padding: 12px 18px 0px 0px ;
+}
+@mixin icon-list($color-icon){
+  width: 76px;
+  height: 19px;
+  border-radius: 20px;
+  background-color: $color-icon;
+
+}
+@mixin icon-small($color-small){
+  width: 25.2px;
+  height: 18.9px;
+  background-color: $color-small;
+  border-radius: 20px;
+}
 $color-blue: #00bcd4;
 $color-red:#e91e63;
 $color-purple: #673ab7;
@@ -22,29 +53,35 @@ $font-primary: 'Lato',VNFQuicksand-Bold;
 body{
   ul li {
     list-style-type: none;
-    overflow: hidden;
     margin-bottom: 16px;
   }
   a {
-    text-decoration: none;
+    text-decoration: none !important;
+
   }
 }
-#page{
-  width: 100%;
-  height: 100%;
+.container{
+  //max-width: 1920px;
+  //position: relative;
+  //overflow-x: hidden;
+  //width: 100%;
+  //height: 100%;
 }
 .row {
 
   margin: 0px 0px 0px 0px;
 
 }
-.contentner{
+.container-fluid{
   .list-inline{
     .title-list-nav{
+      padding: 10px;
       a {
         margin-left: 25px;
+        margin-top: 10px;
         .logo {
           float: left;
+          margin-top: -9px;
           max-height: 40px;
         }
       }
@@ -54,7 +91,7 @@ body{
       z-index: 2;
       float: right;
       position: absolute;
-      margin-left: 138px;
+      left: 113px;
       .icon-creat{
 
       }
@@ -99,6 +136,31 @@ body{
       text-align: left;
       color: #00bcd4;
     }
+    .icon-b{
+      @include icon-list($color-blue);
+      margin: -56px 0px 0px -63px;
+    }
+    .icon-a{
+      @include icon-small($color-red);
+      margin: 93px 0px 0px -22px;
+
+    }
+    .icon-bb{
+      @include icon-list(#ffc107);
+      margin: -35px 40px 0px 0px;
+      float: right;
+    }
+    .icon-ab{
+      @include icon-list($color-blue);
+      margin: -71px 1px 0px 0px;
+      float: right;
+    }
+    .icon-a1{
+      @include icon-small($color-red);
+      float: right;
+      margin-top: -35px;
+      margin-right: 134px;
+    }
   }
   .page-text-b{
     p{
@@ -110,6 +172,22 @@ body{
       text-align: justify;
       color: #673ab7;
     }
+    .icon-top{
+      @include button-list($color-red);
+      margin-top: 45px;
+      .icon-next{
+        margin-left: 10px;
+      }
+      #icon-h-2{margin-left: -10px;}
+    }
+    #icon-title-next{
+      max-width: 160px;
+      border-radius: 100px;
+      background-color: #ffffff;
+      border: solid 2px #673ab7;
+      margin-right: 22px;
+      color: $color-black;
+    }
   }
 
 }
@@ -117,12 +195,39 @@ body{
   .img-big{
     margin-top: -149px;
   }
+  .prev{
+    float: left;
+    width: 83px;
+    height: 30px;
+    border-radius: 100px;
+    border: solid 2px #00bcd4;
+    position: absolute;
+    margin-left: 45px;
+    /* margin-right: 848px; */
+    margin-top: 398px;
+    p{
+      margin-top: 8px;
+      width: 37px;
+      height: 16px;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.14;
+      letter-spacing: 0.2px;
+      text-align: left;
+      color: #00bcd4;
+      /* position: absolute; */
+      margin-left: 33px;
+      position: absolute;
+    }
+  }
 }
 
 .section-title-1{
   padding: 10% 1% 0% 10%;
   .span_text1{
     max-width: 363px;
+    text-align: center;
     .img-center{
       margin-left: 43px;
     }
@@ -135,15 +240,29 @@ body{
       color: #00bcd4;
     }
     .text-a{
+      padding-bottom: 90px;
+      max-height: 190px;
       p {
         padding-top: 22px;
         font-family: Lato;
         font-size: 16px;
         line-height: 1.5;
         text-align: justify;
-        color: #000000;
+        color: $color-black;
 
       }
+    }
+    .page-text-list{
+      @include button-list($color-blue);
+
+    }
+    .icon-list-btn-1{
+      margin-left: -40px;
+      color: $color-white;
+    }
+    .icon-list-btn-2{
+      margin-left: -9px;
+      color: $color-white;
     }
   }
 
@@ -151,7 +270,7 @@ body{
 .sesstion-title-2{
   padding-top: 261px;
   padding-bottom: 200px;
-  .title-lisst{       margin: 20% 0 0 35%;
+  .title-lisst{ margin: 20% 0 0 30%;
     .now{
       font-size: 20px;
       text-align: left;
@@ -164,8 +283,6 @@ body{
         font-family: VNFQuicksand-Bold;
         text-align: justify;
         margin-left: 11px;
-        width: 408px;
-        height: 369px;
         font-size: 24px;
         font-weight: bold;
         line-height: 2;
@@ -173,6 +290,17 @@ body{
         color: #673ab7;
       }
 
+    }
+    .button-icon-book{
+      @include button-list($color-red);
+    }
+    .icon-button-1{
+      color: #fff;
+      margin-left: -47px;
+    }
+    .icon-button-2{
+      color: #fff;
+      margin-left: -8px;
     }
 
   }
@@ -211,19 +339,21 @@ body{
 }
 .title-list-rotund{
 
-  padding: 274px 0px 460px 125px;
+  padding: 13% 0 19% 6%;
   div{
-    margin-left: 45px;
+    margin-left: 1%;
     text-align: center;
-    .img-rotund{    margin-left: 52px;}
+    .img-rotund{    margin-left: 15%;
+                    max-width: 75%;
+    }
     .text-rotund{
       max-width: 255px;
       font-family: VNFQuicksand-Bold;
-      font-size: 21px;
+      font-size: 19px;
       font-weight: bold;
       line-height: 1;
       text-align: justify;
-      color: #000000;
+      color: $color-black;
       margin-left: 30px;
 
     }
@@ -238,7 +368,7 @@ body{
     .img-teacher {
       max-height: 1079px;
       object-fit: contain;
-      background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #ffffff);
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0), $color-white);
     }
     .teacher{
       margin-top: 216px;
@@ -261,7 +391,7 @@ body{
         font-size: 16px;
         line-height: 1.5;
         text-align: justify;
-        color: #000000;
+        color: $color-black;
 
       }
     }
@@ -270,7 +400,7 @@ body{
 
 .sesstion-comment{
   padding-top: 69px;
-  padding-left: 13%;
+  padding-left: 9%;
   min-height: 1080px;
   background-color: #f9f9f9;
   .comment-title{
@@ -313,7 +443,7 @@ body{
   .comment-list{
     margin-left: 50px;
     margin-top: 127px;
-    max-width: 585px;
+    max-width: 577px;
     min-height: 257px;
     border-radius: 30px;
     background-color: #ffffff;
@@ -322,12 +452,11 @@ body{
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     &:hover{
-      box-shadow: 20px 20px 50px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 20px 20px 50px 0 rgba(0, 0, 0, 0.1);
       transform: scale(1.25);
       cursor: pointer;
     }
     .text-comment{
-      width: 505px;
       height: 120px;
       font-family: Lato;
       font-size: 16px;
@@ -352,6 +481,11 @@ body{
 }
 
 .contac-list{
+  .maps{
+    border: 0;
+    width: 100%;
+    height: 776px;
+  }
   .contact-title{
     margin-left: -20px;
     font-family: VNFQuicksand-Bold;
@@ -362,7 +496,7 @@ body{
   }
   .contact-form{
     float: left;
-    margin: 137px 0px 0px 256px;
+    margin: 20% 0 0 22%;
     .form-contact{
       outline: none;
       width: 450px;
@@ -378,6 +512,19 @@ body{
       letter-spacing: 0.3px;
       text-align: justify;
       color: #000000;
+
+    }
+    .form-submit{
+      @include button-list($color-blue);
+      margin-top: 17px;
+    }
+    .icon-sub-frm-1{
+      margin-left: -54px;
+      color: #fff;
+    }
+    .icon-sub-frm-2{
+      margin-left: -8px;
+      color: #fff;
     }
     .icon-form{
       position: absolute;
@@ -408,4 +555,86 @@ body{
   float: left;
   width: 100%;
   padding-bottom: 83px;
+  .footer-list{
+    padding-left: 177px;
+    padding-top: 300px;
+    .footer-tel{
+      float: left;
+      h4{
+        margin-left: 71px;
+        width: 97px;
+        height: 19px;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 900;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #ffffff;
+      }
+      .nal {
+        li{
+          margin: 0px 0px 21px -2px;
+          a{
+            margin-left: 32px;
+            width: 90px;
+            height: 19px;
+            font-family: Lato;
+            font-size: 16px;
+            text-align: left;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .face-fra{
+    padding-top: 300px;
+  }
+  .footer-pi{    margin-top: 388px;
+
+    .privacy{    float: left;
+      padding-left: 206px;
+      margin-right: 38px;
+      color: #fff;}
+    .terms{
+      float: left;
+      margin-right: 38px;
+      color: #fff;
+    }
+    .settings{
+      color: #fff;
+    }
+
+  }
+  .footer-ti{
+    padding-left: 233px;
+    padding-top: 100px;
+    height: 25px;
+    font-family: simple-line-icons;
+    font-size: 24px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #ffffff;
+    .footer-twitter{
+      float: left;
+      padding-right: 46px;
+    }
+    .footer-facebook{
+      float: left;
+      padding-right: 46px;
+    }
+    .footer-linkedin{
+      float: left;
+    }
+    .footer-youtube{
+      float: left;
+    }
+    .haposoft{
+      margin-top: 77px;
+      font-family: Lato;
+      font-size: 16px;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
 }
