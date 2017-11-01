@@ -15,7 +15,7 @@
   background-color: $color;
   color: #fff;
   margin-top: 45px;
-  padding: 12px 18px 0px 0px ;
+  padding: 12px 0px 0px 0px ;
 }
 @mixin icon-list($color-icon){
   width: 76px;
@@ -239,6 +239,12 @@ body{
       text-align: center;
       color: #00bcd4;
     }
+    .contact-l{
+      color: $color-purple;
+    }
+    .contact-new{
+      color: $color-red;
+    }
     .text-a{
       padding-bottom: 90px;
       max-height: 190px;
@@ -256,8 +262,13 @@ body{
       @include button-list($color-blue);
 
     }
+    #color-2{
+      background-color: $color-purple;
+    }
+    #color-3{
+      background-color: $color-red;
+    }
     .icon-list-btn-1{
-      margin-left: -40px;
       color: $color-white;
     }
     .icon-list-btn-2{
@@ -267,6 +278,7 @@ body{
   }
 
 }
+
 .sesstion-title-2{
   padding-top: 261px;
   padding-bottom: 200px;
@@ -374,6 +386,9 @@ body{
       margin-top: 216px;
       margin-left: 124px;
       margin-right: 124px;
+      .icon-list-b{
+        @include icon-list($color-blue);
+      }
       .teacher-col{
         min-height: 65px;
         font-family: VNFQuicksand-Bold;
@@ -517,6 +532,9 @@ body{
     .form-submit{
       @include button-list($color-blue);
       margin-top: 17px;
+    }
+    #submit{
+      padding-right: 31px;
     }
     .icon-sub-frm-1{
       margin-left: -54px;
