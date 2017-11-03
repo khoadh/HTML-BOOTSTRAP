@@ -106,7 +106,7 @@ padding:0 0 0 0;
       float: left;
       position: absolute;
       .icon-sreach{
-        margin-left: 170px;
+        margin-left: 135px;
       }
     }
   }
@@ -339,6 +339,23 @@ padding:0 0 0 0;
         box-shadow: 30px 30px 40px 0 rgba(0, 0, 0, 0.1);
       }}
     .img-book-bottom {
+    .button-home{
+    p{
+       a{
+           position: absolute;
+          text-align: center;
+          float: right;
+          width: 120px;
+          height: 40px;
+          border-radius: 100px;
+          background-color: #ffc107;
+          padding-top: 10px;
+          top: 303px;
+          right: -75px;
+       }
+    }
+
+    }
       position: absolute;
       right: 76px;
       bottom: -97px;
@@ -360,6 +377,18 @@ padding:0 0 0 0;
     text-align: center;
     .img-rotund{    margin-left: 15%;
       max-width: 75%;
+    }
+    .icon_support{
+    position: absolute;
+    text-align: center;
+    float: right;
+    width: 120px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #ffc107;
+    padding-top: 10px;
+    top: 303px;
+    right: -75px;
     }
     .text-rotund{
       max-width: 255px;
