@@ -22,6 +22,7 @@
   height: 19px;
   border-radius: 20px;
   background-color: $color-icon;
+  float:left;
 
 }
 @mixin icon-small($color-small){
@@ -29,6 +30,7 @@
   height: 18.9px;
   background-color: $color-small;
   border-radius: 20px;
+  float:left;
 }
 $color-blue: #00bcd4;
 $color-red:#e91e63;
@@ -71,7 +73,11 @@ body{
       margin-left: -15px;
       margin-right:0px
 }
-
+.navbar-default{
+        z-index: 120;
+    background-color: transparent;
+    border-color: transparent;
+}
 .container-fluid{
 padding:0 0 0 0;
   .list-inline{
@@ -142,11 +148,11 @@ padding:0 0 0 0;
     }
     .icon-b{
       @include icon-list($color-blue);
-      margin: -56px 0px 0px -63px;
+          margin: -2px 0px 0px -72px;
     }
     .icon-a{
       @include icon-small($color-red);
-      margin: 93px 0px 0px -22px;
+      margin: 30px 0px 0px -22px;
 
     }
     .icon-bb{
@@ -210,7 +216,7 @@ padding:0 0 0 0;
     /* margin-right: 848px; */
     margin-top: 398px;
     p{
-      margin-top: 8px;
+      margin-top: 5px;
       width: 37px;
       height: 16px;
       font-family: Lato;
@@ -221,8 +227,51 @@ padding:0 0 0 0;
       text-align: left;
       color: #00bcd4;
       /* position: absolute; */
-      margin-left: 33px;
+      margin-left: 27px;
       position: absolute;
+    }
+    .icon-prev{
+        width: 15px;
+    height: 16px;
+    font-family: themify;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #00bcd4;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 9px;
+
+    }
+  }
+  .next{
+      margin-top: 398px;
+    margin-left: 807px;
+    width: 83px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #e91e63;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    p{
+        margin-left: 13px;
+    color: #fff;
+    position: absolute;
+    margin-top: 5px;
+    }
+    .icon-back{
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    font-family: themify;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 59px;
+    margin-top: 7px;
     }
   }
 }
@@ -419,7 +468,45 @@ padding:0 0 0 0;
       margin-left: 124px;
       margin-right: 124px;
       .icon-list-b{
+            margin-top: 10px;
+    margin-left: -80px;
         @include icon-list($color-blue);
+      }
+      .icon-list-1{
+            height: 19px;
+    width: 38px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #e91e63;
+    left: 96px;
+    top: 184px;
+      }
+      .icon-rd{
+            height: 19px;
+    width: 60px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #00bcd4;
+    bottom: -100px;
+      .icon-round {
+            margin: 0px 15px 0px 77px;
+    float: left;
+    width: 17px;
+    height: 17px;
+    border-radius: 20px;
+    border: solid 4px #e91e63;
+      }
+      #round2{
+           position: absolute;
+    right: -75px;
+    border: solid 4px #b1d136;
+      }
+      #round3{
+               border: solid 4px #ffc107;
+              position: absolute;
+              right: -113px;
+      }
+
       }
       .teacher-col{
         min-height: 65px;
@@ -516,8 +603,6 @@ padding:0 0 0 0;
       max-width: 110px;
       max-height: 110px;
       float: right;
-      margin-top: 57px;
-      margin-right: 15px;
       margin: 57px 15px 0px 0px;
     }
     .icon-text-1{
@@ -543,7 +628,10 @@ padding:0 0 0 0;
   }
   .contact-form{
     float: left;
-    margin: 20% 0 0 22%;
+    margin: 5% 0 0 22%;
+     &:hover{
+    border-color: #673ab7;
+}
     .form-contact{
       outline: none;
       width: 450px;
@@ -559,6 +647,7 @@ padding:0 0 0 0;
       letter-spacing: 0.3px;
       text-align: justify;
       color: #000000;
+
 
     }
     .form-submit{
@@ -605,6 +694,10 @@ padding:0 0 0 0;
   float: left;
   width: 100%;
   padding-bottom: 83px;
+  .img-footer{
+        text-align: center;
+    padding-top: 90px;
+  }
   .footer-list{
     padding-left: 177px;
     padding-top: 300px;
@@ -678,6 +771,7 @@ padding:0 0 0 0;
     }
     .footer-youtube{
       float: left;
+          margin-left: 39px;
     }
     .haposoft{
       margin-top: 77px;

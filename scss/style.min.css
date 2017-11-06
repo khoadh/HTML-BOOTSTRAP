@@ -3,6 +3,7 @@
 body ul li{list-style-type:none;margin-bottom:16px}
 body a{text-decoration:none!important}
 .row{margin-left:-15px;margin-right:0}
+.navbar-default{z-index:120;background-color:transparent;border-color:transparent}
 .container-fluid{padding:0}
 .container-fluid .list-inline .title-list-nav{padding:10px}
 .container-fluid .list-inline .title-list-nav a{margin-left:25px;margin-top:10px}
@@ -16,11 +17,11 @@ body a{text-decoration:none!important}
 .title-bottom{padding-left:14%;padding:9% 5% 0 26%}
 .title-bottom #logo-1{margin-bottom:4%}
 .title-bottom .page-text-a .text-1{font-family:VNFQuicksand-Bold;font-size:60px;font-weight:700;line-height:1.13;text-align:left;color:#00bcd4}
-.title-bottom .page-text-a .icon-b{width:76px;height:19px;border-radius:20px;background-color:#00bcd4;margin:-56px 0 0 -63px}
-.title-bottom .page-text-a .icon-a{width:25.2px;height:18.9px;background-color:#e91e63;border-radius:20px;margin:93px 0 0 -22px}
-.title-bottom .page-text-a .icon-bb{width:76px;height:19px;border-radius:20px;background-color:#ffc107;margin:-35px 40px 0 0;float:right}
-.title-bottom .page-text-a .icon-ab{width:76px;height:19px;border-radius:20px;background-color:#00bcd4;margin:-71px 1px 0 0;float:right}
-.title-bottom .page-text-a .icon-a1{width:25.2px;height:18.9px;background-color:#e91e63;border-radius:20px;float:right;margin-top:-35px;margin-right:134px}
+.title-bottom .page-text-a .icon-b{width:76px;height:19px;border-radius:20px;background-color:#00bcd4;float:left;margin:-2px 0 0 -72px}
+.title-bottom .page-text-a .icon-a{width:25.2px;height:18.9px;background-color:#e91e63;border-radius:20px;float:left;margin:30px 0 0 -22px}
+.title-bottom .page-text-a .icon-bb{width:76px;height:19px;border-radius:20px;background-color:#ffc107;float:left;margin:-35px 40px 0 0;float:right}
+.title-bottom .page-text-a .icon-ab{width:76px;height:19px;border-radius:20px;background-color:#00bcd4;float:left;margin:-71px 1px 0 0;float:right}
+.title-bottom .page-text-a .icon-a1{width:25.2px;height:18.9px;background-color:#e91e63;border-radius:20px;float:left;float:right;margin-top:-35px;margin-right:134px}
 .title-bottom .page-text-b p{max-width:487px;padding-top:93px;font-family:Lato;font-size:16px;line-height:1.5;text-align:justify;color:#673ab7}
 .title-bottom .page-text-b .icon-top{text-align:center;width:172px;height:50px;display:inline-block;border-radius:40px;background-color:#e91e63;color:#fff;margin-top:45px;padding-top:12px;margin-top:45px}
 .title-bottom .page-text-b .icon-top .icon-next{margin-left:10px}
@@ -28,7 +29,11 @@ body a{text-decoration:none!important}
 .title-bottom .page-text-b #icon-title-next{max-width:160px;border-radius:100px;background-color:#fff;border:solid 2px #673ab7;margin-right:22px;color:#000}
 .rectangle .img-big{margin-top:-149px}
 .rectangle .prev{float:left;width:83px;height:30px;border-radius:100px;border:solid 2px #00bcd4;position:absolute;margin-left:45px;margin-top:398px}
-.rectangle .prev p{margin-top:8px;width:37px;height:16px;font-family:Lato;font-size:14px;font-weight:700;line-height:1.14;letter-spacing:.2px;text-align:left;color:#00bcd4;margin-left:33px;position:absolute}
+.rectangle .prev p{margin-top:5px;width:37px;height:16px;font-family:Lato;font-size:14px;font-weight:700;line-height:1.14;letter-spacing:.2px;text-align:left;color:#00bcd4;margin-left:27px;position:absolute}
+.rectangle .prev .icon-prev{width:15px;height:16px;font-family:themify;font-size:14px;line-height:1.14;letter-spacing:.2px;text-align:left;color:#00bcd4;position:absolute;margin-top:6px;margin-left:9px}
+.rectangle .next{margin-top:398px;margin-left:807px;width:83px;height:30px;border-radius:100px;background-color:#e91e63;box-shadow:5px 5px 10px 0 rgba(0,0,0,.1);position:absolute}
+.rectangle .next p{margin-left:13px;color:#fff;position:absolute;margin-top:5px}
+.rectangle .next .icon-back{position:absolute;width:15px;height:16px;font-family:themify;font-size:14px;line-height:1.14;letter-spacing:.2px;text-align:left;color:#fff;margin-left:59px;margin-top:7px}
 .section-title-1{padding:10% 1% 0 10%}
 .section-title-1 .span_text1{max-width:363px;text-align:center}
 .section-title-1 .span_text1 .img-center{margin-left:43px}
@@ -65,7 +70,12 @@ body a{text-decoration:none!important}
 .title-list-rotund div p{padding-top:71px;text-align:center}
 .sesstion-teacher .col-md-6 .img-teacher{max-height:1079px;object-fit:contain;background-image:linear-gradient(to top,rgba(255,255,255,0),#fff)}
 .sesstion-teacher .col-md-6 .teacher{margin-top:216px;margin-left:124px;margin-right:124px}
-.sesstion-teacher .col-md-6 .teacher .icon-list-b{width:76px;height:19px;border-radius:20px;background-color:#00bcd4}
+.sesstion-teacher .col-md-6 .teacher .icon-list-b{margin-top:10px;margin-left:-80px;width:76px;height:19px;border-radius:20px;background-color:#00bcd4;float:left}
+.sesstion-teacher .col-md-6 .teacher .icon-list-1{height:19px;width:38px;border-radius:20px;position:absolute;background-color:#e91e63;left:96px;top:184px}
+.sesstion-teacher .col-md-6 .teacher .icon-rd{height:19px;width:60px;border-radius:20px;position:absolute;background-color:#00bcd4;bottom:-100px}
+.sesstion-teacher .col-md-6 .teacher .icon-rd .icon-round{margin:0 15px 0 77px;float:left;width:17px;height:17px;border-radius:20px;border:solid 4px #e91e63}
+.sesstion-teacher .col-md-6 .teacher .icon-rd #round2{position:absolute;right:-75px;border:solid 4px #b1d136}
+.sesstion-teacher .col-md-6 .teacher .icon-rd #round3{border:solid 4px #ffc107;position:absolute;right:-113px}
 .sesstion-teacher .col-md-6 .teacher .teacher-col{min-height:65px;font-family:VNFQuicksand-Bold;font-size:36px;font-weight:700;text-align:left;color:#00bcd4}
 .sesstion-teacher .col-md-6 .teacher .teacher-col .name{color:#673ab7;font-family:VNFQuicksand-Bold}
 .sesstion-teacher .col-md-6 .teacher .list-text{max-width:609px;font-family:Lato;font-size:16px;line-height:1.5;text-align:justify;color:#000}
@@ -78,11 +88,12 @@ body a{text-decoration:none!important}
 .sesstion-comment .comment-list{margin-left:50px;margin-top:127px;max-width:577px;min-height:257px;border-radius:30px;background-color:#fff;transition:all 1s;-moz-transition:all 1s;-webkit-transition:all 1s}
 .sesstion-comment .comment-list:hover{box-shadow:20px 20px 50px 0 rgba(0,0,0,.1);transform:scale(1.25);cursor:pointer}
 .sesstion-comment .comment-list .text-comment{height:120px;font-family:Lato;font-size:16px;line-height:1.5;text-align:justify;color:#000;padding:40px 40px 97px 40px}
-.sesstion-comment .comment-list .img-comment-user-1{max-width:110px;max-height:110px;float:right;margin-top:57px;margin-right:15px;margin:57px 15px 0 0}
+.sesstion-comment .comment-list .img-comment-user-1{max-width:110px;max-height:110px;float:right;margin:57px 15px 0 0}
 .sesstion-comment .comment-list .icon-text-1{float:right;margin-top:52px}
 .contac-list .maps{border:0;width:100%;height:776px}
 .contac-list .contact-title{margin-left:-20px;font-family:VNFQuicksand-Bold;font-size:36px;font-weight:700;text-align:center;color:#00bcd4}
-.contac-list .contact-form{float:left;margin:20% 0 0 22%}
+.contac-list .contact-form{float:left;margin:5% 0 0 22%}
+.contac-list .contact-form:hover{border-color:#673ab7}
 .contac-list .contact-form .form-contact{outline:0;width:450px;height:50px;border-radius:100px;background-color:#fff;border:solid 1px #03a9f4;margin-bottom:18px;padding-left:37px;font-family:Lato;font-size:16px;letter-spacing:.3px;text-align:justify;color:#000}
 .contac-list .contact-form .form-submit{text-align:center;width:172px;height:50px;display:inline-block;border-radius:40px;background-color:#00bcd4;color:#fff;margin-top:45px;padding-top:12px;margin-top:17px}
 .contac-list .contact-form #submit{padding-right:31px}
@@ -92,6 +103,7 @@ body a{text-decoration:none!important}
 .contac-list .contact-form .form-textarea{width:449px;height:128px;border-radius:25px;background-color:#fff;border:solid 1px #00bcd4}
 .contac-list .contact-form .form-input{padding-bottom:84px;padding-left:38px}
 .footer{background-color:#00bcd4;float:left;width:100%;padding-bottom:83px}
+.footer .img-footer{text-align:center;padding-top:90px}
 .footer .footer-list{padding-left:177px;padding-top:300px}
 .footer .footer-list .footer-tel{float:left}
 .footer .footer-list .footer-tel h4{margin-left:71px;width:97px;height:19px;font-family:Lato;font-size:16px;font-weight:900;letter-spacing:.3px;text-align:left;color:#fff}
@@ -106,19 +118,22 @@ body a{text-decoration:none!important}
 .footer .footer-ti .footer-twitter{float:left;padding-right:46px}
 .footer .footer-ti .footer-facebook{float:left;padding-right:46px}
 .footer .footer-ti .footer-linkedin{float:left}
-.footer .footer-ti .footer-youtube{float:left}
+.footer .footer-ti .footer-youtube{float:left;margin-left:39px}
 .footer .footer-ti .haposoft{margin-top:77px;font-family:Lato;font-size:16px;text-align:left;color:#fff}
-@media screen and (max-width:1480px){
+@media screen and (max-width:1480px) and (min-width:1290px){
 .container-fluid .list-inline .title-list-nav a{margin-left:14px}
 .container-fluid .list-inline .title-creat{left:-34px}
 .container-fluid .list-inline .title-creat .icon-sreach{margin-left:127px}
 .container-fluid .list-inline .title-login{left:66px}
-.container-fluid .title-bottom{padding:9% 5% 0 22%}
+.container-fluid .title-bottom{padding:9% 5% 0 20%}
 .container-fluid .title-bottom #logo-1{margin-bottom:-10%}
-.container-fluid .title-bottom .page-text-a .text-1{font-size:47px}
-.container-fluid .title-bottom .page-text-a .icon-ab{margin:-57px -3px 0 0}
-.container-fluid .title-bottom .page-text-a .icon-a1{margin:-24px 89px 0 0}
-.container-fluid .title-bottom .page-text-a .icon-bb{margin:-24px 9px 0 0}
+.container-fluid .title-bottom .page-text-a{padding-top:85px}
+.container-fluid .title-bottom .page-text-a .text-1{font-size:49px}
+.container-fluid .title-bottom .page-text-a .icon-ab{height:14px;width:69px;margin:-57px -3px 0 0}
+.container-fluid .title-bottom .page-text-a .icon-a1{height:14px;margin:-24px 89px 0 0}
+.container-fluid .title-bottom .page-text-a .icon-bb{height:14px;width:69px;margin:-24px 9px 0 0}
+.container-fluid .title-bottom .page-text-a .icon-a{width:25.2px;height:14px;margin:19px 0 0 -26px}
+.container-fluid .title-bottom .page-text-a .icon-b{height:14px;width:69px;margin:-14px 0 0 -77px}
 .container-fluid .title-bottom .page-text-b p{max-width:406px;padding-top:60px;font-size:13px}
 .container-fluid .rectangle .prev p{margin:5px 0 0 26px}
 .container-fluid .section-title-1{padding:17% 1% 0 7%}
@@ -138,17 +153,17 @@ body a{text-decoration:none!important}
 .container-fluid .title-list-rotund div p{width:249px;margin-left:-12px}
 .container-fluid .title-list-rotund div .img-rotund{margin-left:31%;max-width:84%}
 .container-fluid .sesstion-teacher{margin-top:276px}
-.container-fluid .sesstion-teacher .col-md-6 .img-teacher{padding-right:40px}
-.container-fluid .sesstion-teacher .col-md-6 .teacher{margin:152px 64px 0 64px}
-.container-fluid .sesstion-teacher .col-md-6 .teacher .list-text{font-size:14px}
+.container-fluid .sesstion-teacher .col-md-6 .teacher{margin:152px 64px 0 105px}
+.container-fluid .sesstion-teacher .col-md-6 .teacher .list-text{font-size:14px;max-width:425px}
 .container-fluid .sesstion-teacher .col-md-6 .teacher .teacher-col{font-size:29px}
 .container-fluid .sesstion-teacher .col-md-6 .teacher .icon-list-b{width:67px;height:16px;position:absolute;top:160px;left:0;width:67px;height:16px;border-radius:20px;background-color:#00bcd4}
-.container-fluid .sesstion-comment .comment-list{margin-left:0;margin-left:0;max-width:500px}
-.container-fluid .sesstion-comment .comment-list .img-comment-user-1{max-width:90px;max-height:90px}
+.container-fluid .sesstion-comment .comment-list{margin-left:0;margin-left:0;max-width:500px;min-height:185px}
 .container-fluid .sesstion-comment .comment-list .text-comment{font-size:13px}
-.container-fluid .sesstion-comment .comment-title{max-width:536px;max-height:305px}
+.container-fluid .sesstion-comment .comment-list .text-comment .img-comment-user-1{max-width:90px;max-height:90px;margin:-3px 15px 0 0}
+.container-fluid .sesstion-comment .comment-list .icon-text-1{float:right;margin-top:-6px}
+.container-fluid .sesstion-comment .comment-title{max-width:536px;min-height:305px}
 .container-fluid .sesstion-comment .comment-title .text-comment{font-size:13px}
-.container-fluid .sesstion-comment .comment-title .img-comment-user{max-width:90px;max-height:90px}
+.container-fluid .comment-list .img-comment-user-1{margin:-3px 15px 0 0;max-width:90px;max-height:90px}
 .container-fluid .footer .col-md-4 .face-fra .footer-logo{max-width:340px}
 .container-fluid .footer .col-md-8 .footer-list{padding-left:47px}
 .container-fluid .footer .col-md-8 .footer-list .footer-tel .nal li{margin:0 0 21px 3px}
@@ -159,21 +174,97 @@ body a{text-decoration:none!important}
 @media screen and (max-width:380px){
 body span{display:none}
 .container-fluid .contac-list .contact-form{margin:0}
-.container-fluid .contac-list .contact-form .form-contact{width:336px;height:47px}
-.title-list-rotund .col-md-2 .text-rotund .text-rotund-bottom{width:0}
-.title-list-rotund .col-md-2 a{display:none}
-.col-md-6{margin-left:0}
-.col-md-6 .rectangle .prev{display:none}
-.col-md-6 .rectangle .next{display:none}
-.col-md-6 .title-bottom .page-text-a .text-1{font-size:28px;margin-top:41px}
-.col-md-6 .title-bottom .page-text-b{padding-bottom:52px}
-.col-md-6 .title-bottom .page-text-b p{padding-top:23px}
-.col-md-6 .title-bottom .page-text-b .icon-top{width:153px}
-.col-md-6 .title-bottom .page-text-b #icon-title-next{max-width:103px;margin-right:0}
-.section-title-1 .top-text{margin-top:15px}
-.section-title-1 .span_text1 .img-conter{margin-left:13px;margin-top:79px}
-.sesstion-title-2{padding-top:30px}
-.sesstion-title-2 .col-md-5 .title-lisst{margin:20% 0 0 12%;width:345px}
-.sesstion-title-2 .col-md-5 .title-lisst .text-list-s2{font-size:19px}
-.col-md-7{padding-right:0;padding-top:50px}
+.container-fluid .contac-list .contact-form .form-contact{width:288px;height:40px}
+.container-fluid .sesstion-comment .comment-list{margin-left:-30px}
+.container-fluid .title-list-rotund .col-md-2 .img-rotund{margin-left:19%;margin-top:20px}
+.container-fluid .title-list-rotund .col-md-2 a{display:none}
+.container-fluid .col-md-6{margin-left:0}
+.container-fluid .col-md-6 .rectangle .prev{display:none}
+.container-fluid .col-md-6 .rectangle .next{display:none}
+.container-fluid .col-md-6 .title-bottom{padding:9% 5% 0 12%}
+.container-fluid .col-md-6 .title-bottom .page-text-a{padding-top:20px}
+.container-fluid .col-md-6 .title-bottom .page-text-a .text-1{font-size:28px;margin-top:41px}
+.container-fluid .col-md-6 .title-bottom .page-text-b{padding-bottom:52px}
+.container-fluid .col-md-6 .title-bottom .page-text-b p{padding-top:23px}
+.container-fluid .col-md-6 .title-bottom .page-text-b .icon-top{width:153px}
+.container-fluid .col-md-6 .title-bottom .page-text-b #icon-title-next{max-width:103px;margin-right:0}
+.container-fluid .section-title-1 .top-text{margin-top:15px}
+.container-fluid .section-title-1 .span_text1 .img-conter{margin-left:3px;margin-top:79px}
+.container-fluid .section-title-1 .span_text1 .text-a{padding-bottom:3px}
+.container-fluid .sesstion-title-2{padding-top:30px}
+.container-fluid .sesstion-title-2 .col-md-5 .title-lisst{margin:20% 0 0 2%;width:345px}
+.container-fluid .sesstion-title-2 .col-md-5 .title-lisst .now a{font-size:16px}
+.container-fluid .col-md-7{padding-right:0;padding-top:50px}
+.container-fluid .title-list-nav .title-top{display:none}
+.container-fluid .container-fluid .col-md-2{display:none}
+.container-fluid .img-book-bottom .button-home p{display:none}
+.container-fluid .sesstion-teacher .col-md-6 .teacher{margin:69px 64px 0 35px}
+.container-fluid .footer .footer-logo{max-width:360px}
+.container-fluid .footer .footer-list{padding-left:10px}
+}
+@media screen and (max-width:1025px) and (min-width:790px){
+body .rectangle .prev{display:none}
+body .rectangle .next{display:none}
+.container-fluid .list-inline .title-list-nav a{margin-left:5px;font-size:12px}
+.container-fluid .list-inline .title-list-nav a .logo{margin-top:0;max-height:26px}
+.container-fluid .list-inline .title-login{left:24px;font-size:12px}
+.container-fluid .list-inline .title-creat{left:-76px;font-size:12px}
+.container-fluid .title-bottom .page-text-a{padding-top:40px}
+.container-fluid .title-bottom .page-text-a .icon-b{height:14px;width:55px;margin:2px 0 0 -55px}
+.container-fluid .title-bottom .page-text-a .text-1{font-size:37px}
+.container-fluid .title-bottom .page-text-a .icon-a1{height:12px;margin:-19px 38px 0 0}
+.container-fluid .title-bottom .page-text-a .icon-bb{height:14px;width:55px;margin:-19px -30px 0 0}
+.container-fluid .title-bottom .page-text-a .icon-ab{height:14px;width:55px;margin:-46px -42px 0 0}
+.container-fluid .title-bottom .page-text-b p{padding-top:17px}
+.container-fluid .title-bottom .page-text-b #icon-title-next{margin-right:0}
+.container-fluid .section-title-1{padding:10% 1% 0 4%}
+.container-fluid .section-title-1 .span_text1 h2{font-size:29px}
+.container-fluid .sesstion-title-2 .title-lisst{margin:20% 0 0 15%}
+.container-fluid .sesstion-title-2 .title-lisst p a{font-size:18px}
+.container-fluid .sesstion-title-2 .title-lisst .ti-star a{font-size:18px}
+.container-fluid .sesstion-title-2 .img-book-bottom{right:1px;bottom:-25px}
+.container-fluid .sesstion-title-2 .col-md-7{max-width:50%;float:right}
+.container-fluid .title-list-rotund div .text-rotund{font-size:13px;margin-left:-15px}
+.container-fluid .title-list-rotund div .img-rotund{max-width:100%;margin-left:-6%}
+.container-fluid .sesstion-teacher .col-md-6 .teacher{margin:96px 28px 0 57px}
+.container-fluid .sesstion-teacher .col-md-6 .teacher .icon-list-b{width:43px;height:12px;margin-left:-43px;margin-top:9px}
+.container-fluid .sesstion-teacher .col-md-6 .teacher .teacher-col{font-size:20px}
+.container-fluid .sesstion-teacher .col-md-6 .teacher .list-text{margin-top:-35px;font-size:14px}
+.container-fluid .contac-list .contact-form{float:left;margin:19% 0 0 5%}
+.container-fluid .footer .footer-logo{max-width:300px}
+.container-fluid .rectangle .img-big{margin-top:40px}
+}
+@media screen and (max-width:415px) and (min-width:390px){
+body .title-list-nav .title-top{display:none}
+body .col-md-2{display:none}
+body .title-bottom{padding:9% 5% 0 12%}
+body .title-bottom span{display:none}
+body .title-bottom .page-text-b .icon-top{width:150px;margin-bottom:47px}
+body .rectangle .next{display:none}
+body .rectangle .prev{display:none}
+body .navbar-nav{margin:.5px -15px}
+body .sesstion-title-2 .col-md-5 .title-lisst{margin:20% 0 0 4%}
+body .title-list-rotund .icon_support{display:none}
+body .contac-list .contact-form ul li .form-contact{width:276px;height:40px}
+body .footer .footer-logo{max-width:394px}
+body .title-bottom .page-text-a .text-1{font-size:31px}
+body .sesstion-teacher .col-md-6 .teacher{margin:135px 21px 0 23px}
+}
+@media screen and (max-width:790px) and (min-width:430px){
+body .col-md-2{display:none}
+body .title-list-rotund .icon_support{display:none}
+body .rectangle .prev{display:none}
+body .rectangle .next{display:none}
+body .title-bottom{padding:9% 5% 0 18%}
+body .sesstion-teacher .col-md-6 .img-teacher{max-height:856px}
+body .section-title-1 .span_text1{max-width:675px}
+body .section-title-1 .span_text1 .img-responsive{display:-webkit-inline-box}
+body .sesstion-comment .comment-title{max-width:600px;min-height:287px}
+body .footer .footer-list{padding-left:0}
+body .footer .face-fra{text-align:center}
+body .sesstion-title-2 .img-list-book{padding-top:95px}
+body .sesstion-title-2 .img-list-book .img-book-bottom{right:72px;bottom:-60px}
+body .title-list-rotund div{float:left;margin-left:10%}
+body .title-list-rotund div .img-rotund{max-width:100%}
+body .title-list-rotund div .text-rotund{margin-left:68px}
 }
