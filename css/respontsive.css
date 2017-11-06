@@ -1,0 +1,9 @@
+@media screen and (max-width: 1290px) {
+    body {
+    	background-color: #000;
+        .row{margin-left: -15px;}
+        .title-list-nav a{margin-left: 15px;}
+
+
+      
+}
